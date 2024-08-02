@@ -1,0 +1,81 @@
+/* Allgemeine Stile für den Create New Blog-Container */
+.new-blog-container {
+    width: 800px; /* Festgelegte Breite für den Container */
+    margin: 20px auto; /* Zentriert den Container horizontal */
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f4f4; /* Heller Hintergrund für besseren Kontrast */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift */
+.new-blog-container h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 24px; /* Größere Schriftgröße für die Überschrift */
+}
+
+/* Stil für das Formular */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 20px; /* Größerer Abstand zwischen den Feldern */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Mehr Abstand unterhalb des Labels */
+    font-weight: bold;
+    color: #333;
+    font-size: 16px; /* Größere Schriftgröße für bessere Lesbarkeit */
+}
+
+/* Stil für die Eingabefelder und Textarea */
+input, textarea {
+    width: 100%;
+    padding: 12px; /* Mehr Padding für mehr Innenraum */
+    border: 1px solid #ccc; /* Leicht hellerer Rand */
+    border-radius: 6px; /* Etwas größere Abrundung für die Ecken */
+    font-size: 16px; /* Größere Schriftgröße für bessere Lesbarkeit */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5; /* Bessere Zeilenhöhe */
+    box-sizing: border-box; /* Sicherstellen, dass Padding und Border in die Gesamtbreite einbezogen werden */
+}
+
+textarea {
+    resize: vertical; /* Ermöglicht nur vertikales Resize */
+    min-height: 150px; /* Minimale Höhe für die Textarea */
+    max-height: 300px; /* Maximale Höhe für die Textarea */
+}
+
+/* Fokuszustand für Eingabefelder und Textarea */
+input:focus, textarea:focus {
+    border-color: #007bff; /* Blauer Rand bei Fokus */
+    outline: none; /* Entfernt den Standard-Fokus-Rahmen */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sanfte Schatten für zusätzlichen Fokus-Effekt */
+}
+
+/* Stil für den Erstellen-Button */
+button[type="submit"] {
+    background-color: #28a745; /* Grüne Hintergrundfarbe */
+    color: #fff;
+    padding: 12px 20px; /* Mehr Padding für größere Klickfläche */
+    border: none;
+    border-radius: 6px; /* Konsistente Abrundung mit Eingabefeldern */
+    font-size: 16px; /* Größere Schriftgröße für den Button */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für den Button */
+    align-self: center; /* Zentriert den Button im Formular */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Dunkleres Grün beim Hover-Effekt */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Dunklerer Schatten beim Hover */
+}

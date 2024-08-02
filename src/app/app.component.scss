@@ -1,0 +1,21 @@
+/* header.component.css */
+
+.header {
+    background-color: #28a745; /* Dunkelgrau als Hintergrundfarbe */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    margin-right: 10px; /* Abstand zwischen Bild und Text */
+}
+
+.header h1 {
+    margin: 0; /* Entfernt den Standardabstand des h1-Elements */
+    font-size: 24px; /* Beispiel: Größe des Haupttitels */
+}

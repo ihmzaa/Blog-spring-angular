@@ -1,0 +1,70 @@
+/* Allgemeine Stile für den Editier-Container */
+.edit-blog-container {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f4f4f4; /* Heller Hintergrund für besseren Kontrast */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift */
+.edit-blog-container h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Stil für das Formular */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px; /* Mehr Padding für mehr Innenraum */
+  border: 1px solid #ccc; /* Leicht hellerer Rand */
+  border-radius: 6px; /* Etwas größere Abrundung für die Ecken */
+  font-size: 16px; /* Größere Schriftgröße für bessere Lesbarkeit */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5; /* Bessere Zeilenhöhe */
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Stil für den Aktualisieren-Button */
+button[type="submit"] {
+  background-color: #28a745; /* Grüne Hintergrundfarbe */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  align-self: center; /* Zentriert den Button im Formular */
+}
+
+button[type="submit"]:hover {
+  background-color: #218838; /* Dunkleres Grün beim Hover-Effekt */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

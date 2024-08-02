@@ -1,0 +1,14 @@
+<div class="new-blog-container">
+  <h2>Create New Blog</h2>
+  <form (ngSubmit)="createBlog()">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="newBlog.title" name="title" required>
+    </div>
+    <div>
+      <label for="content">Content:</label>
+      <textarea id="content" [(ngModel)]="newBlog.content" name="content" required></textarea>
+    </div>
+    <button type="submit">Create Blog</button>
+  </form>
+</div>

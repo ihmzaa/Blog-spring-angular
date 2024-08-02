@@ -1,0 +1,130 @@
+/* Allgemeine Stile für die Tabelle und Container */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f4f4f4; /* Heller Hintergrund für besseren Kontrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    display: flex; /* Verwenden von Flexbox */
+    flex-direction: column; /* Anordnung der Kinder vertikal */
+}
+
+.table-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Tabelle Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #28a745; /* Grüne Kopfzeile */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    transition: background-color 0.3s;
+}
+
+tr.selected {
+    background-color: #e9f7e9; /* Helles Grün für ausgewählte Zeile */
+}
+
+/* Stil für die Aktionszeile */
+.action-row {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    display: table-row; /* Immer anzeigen */
+}
+
+/* Stil für den Container der Aktions-Buttons */
+.action-buttons-container {
+    text-align: center; /* Zentriert den Container innerhalb der Zelle */
+}
+
+/* Stil für die Aktions-Buttons */
+.action-buttons {
+    display: inline-flex; /* Inline-Flexbox für zentrierte Buttons */
+    gap: 10px; /* Abstand zwischen Buttons */
+}
+
+/* Stil für Edit-Button */
+.edit-btn {
+    background-color: #007bff; /* Blaue Hintergrundfarbe für den Edit-Button */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover {
+    background-color: #0056b3; /* Dunkleres Blau beim Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Stil für Delete-Button */
+.delete-btn {
+    background-color: #dc3545; /* Rote Hintergrundfarbe für den Delete-Button */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Dunkleres Rot beim Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Stil für den Erstellen Neuen Blog Button */
+.create-new-blog {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745; /* Grüne Hintergrundfarbe */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-new-blog:hover {
+    background-color: #218838; /* Dunkleres Grün beim Hover-Effekt */
+}
+
+/* Stil für Logout-Link */
+.logout-link {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff0000; /* Rote Farbe für den Link */
+    text-decoration: none;
+    align-self: flex-end; /* Verschiebt den Link nach rechts */
+}
+
+.logout-link:hover {
+    text-decoration: underline; /* Unterstreicht den Link beim Hover-Effekt */
+}

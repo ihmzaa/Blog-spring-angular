@@ -1,0 +1,40 @@
+<div class="table-container">
+  <h2>Welcome, {{currentUser}}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Time</th>
+        <th>Author</th>
+        <th *ngIf="selectedBlog">Actions</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let blog of blogs">
+        <tr [ngClass]="{'selected': selectedBlog === blog}" (click)="selectBlog(blog)">
+          <td>{{blog.id}}</td>
+          <td>{{blog.title}}</td>
+          <td>{{blog.content}}</td>
+          <td>{{blog.time}}</td>
+          <td>{{blog.autor}}</td>
+          <td *ngIf="selectedBlog === blog" class="action-buttons-container">
+            <div class="action-buttons">
+              <button class="edit-btn" (click)="navigateToEditBlog(blog.id); $event.stopPropagation(); $event.preventDefault()">
+                Edit
+              </button>
+              <button class="delete-btn" (click)="deleteBlog(blog.id); $event.stopPropagation(); $event.preventDefault()">
+                Delete
+              </button>
+            </div>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <button class="create-new-blog" (click)="navigateToNewBlog()">
+    Create New Blog
+  </button>
+  <a class="logout-link" (click)="logout()">Logout</a>
+</div>
